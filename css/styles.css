@@ -63,3 +63,12 @@ li .delete {
 li .delete:hover {
   font-weight: bold;
 }
+
+.completed {
+  /* Customize the styles for completed items as needed */
+  color: #888; /* Change the text color for completed items */
+}
+
+.strike {
+  text-decoration: line-through; /* Apply a line-through style for the strike class */
+}

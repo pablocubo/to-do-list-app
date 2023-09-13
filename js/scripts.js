@@ -9,9 +9,9 @@ $(document).ready(function () {
         }
     });
 
-    // Function to cross out an item
+    // Function to toggle the "completed" and "strike" classes on item text
     $('#itemList').on('click', '.itemText', function () {
-        $(this).toggleClass('completed');
+        $(this).toggleClass('completed strike');
     });
 
     // Function to delete an item
