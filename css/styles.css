@@ -1,74 +1,121 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #d3e1af;
+* {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-  max-width: 400px;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: #43a8bf80;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  color: #333;
-  text-align: center;
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
 }
 
-input[type="text"] {
-  width: 80%;
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 14px; /* Changed 'font-weight' to 'font-size' */
 }
 
 button {
-  background-color: #007bff;
-  color: #fff;
   border: none;
-  padding: 10px 20px;
+  outline: none;
+  background-color: #ff5100;
+  color: #fff;
+  /* Removed duplicate 'border' property */
+  padding: 16px 50px;
+  font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 40px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff510087; /* Adjusted the hover background color */
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li .delete {
-  color: #ff0000;
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
   cursor: pointer;
+  position: relative;
 }
 
-li .delete:hover {
-  font-weight: bold;
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url('images/unchecked.png');
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
 }
 
-.completed {
-  /* Customize the styles for completed items as needed */
-  color: #888; /* Change the text color for completed items */
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
 }
 
-.strike {
-  text-decoration: line-through; /* Apply a line-through style for the strike class */
+ul li.checked::before {
+  background-image: url('images/checked.png');
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #edeef0;
+
 }
