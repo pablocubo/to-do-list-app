@@ -1,20 +1,39 @@
 # To-Do List App
 
-This is a simple To-Do List web application built using HTML, CSS, and jQuery. It allows users to create, edit, cross out, and delete items on their to-do list.
+This is a simple To-Do List application that allows users to add and manage their daily tasks. The application is built using HTML, CSS, and JavaScript.
+
+<img src="images/icon.png" alt="To-Do List Icon" width="100" height="100">
+
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Structure](#structure)
+- [Usage](#usage)
+- [License](#license)
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
 
 ## Features
 
-- Add new items to your to-do list.
-- Cross out completed items.
-- Delete items you no longer need.
-- Change the order of items.
-- Colorful and user-friendly interface.
+- Add new tasks to the to-do list.
+- Mark tasks as completed by clicking on them.
+- Remove tasks from the list.
 
-## How to Use
+## Prerequisites
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser to use the app.
-3. Click on an item to cross it out.
-4. Click on the delete button (X) to remove an item.
-5. Use the input field at the bottom to add new items.
-6. Drag and drop items to change their order.
+Before you begin, ensure you have met the following requirements:
+- A modern web browser (e.g., Chrome, Firefox, Edge, Safari).
+
+## Installation
+
+To install and run this To-Do List App locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pablocubo/todo-list-app.git
